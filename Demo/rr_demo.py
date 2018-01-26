@@ -5,7 +5,7 @@ from sklearn import linear_model
 
 X = [[0, 1], [2, 3], [5, 6]]
 y = [10, 33, 76]
-clf = linear_model.Ridge(alpha=0.1)  # 设置k值
+clf = linear_model.Ridge(alpha=0.1)  # 设置正则化强度
 clf.fit(X, y)  # 参数拟合
 
 print("系数w:",clf.coef_)  # 系数
